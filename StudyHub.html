@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCA Study Hub Nepal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+nav{
+    background:#0d6efd;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.search-box{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:white;
+    color:#0d6efd;
+    border:none;
+    border-radius:5px;
+    margin-top:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    font-size:2rem;
+}
+
+.semester-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px 50px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card button{
+    margin-top:15px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px 50px;
+}
+
+.feature-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .search-box{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>BCA Study Hub Nepal</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Semesters</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>BCA Study Hub Nepal</h1>
+
+    <p>
+        Access BCA syllabus, notes, past questions and study materials semester-wise.
+    </p>
+
+    <input
+        type="text"
+        placeholder="Search Subject..."
+        class="search-box"
+    >
+
+    <br>
+
+    <button class="btn">Explore Resources</button>
+</section>
+
+<h2 class="section-title">Browse Semesters</h2>
+
+<div class="semester-container">
+
+    <div class="card">
+        <h3>SEMESTER 1</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 2</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 3</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 4</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 5</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 6</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 7</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>SEMESTER 8</h3>
+        <p>View Subjects & Resources</p>
+        <button>Open</button>
+    </div>
+
+</div>
+
+<h2 class="section-title">Resources Available</h2>
+
+<div class="features">
+
+    <div class="feature-box">
+        <h3>📘 Syllabus</h3>
+        <p>Semester-wise updated BCA syllabus.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>📝 Notes</h3>
+        <p>Subject-wise notes and study materials.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>📄 Past Questions</h3>
+        <p>Previous year examination questions.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>⭐ Important Questions</h3>
+        <p>Exam-focused important questions.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 BCA Study Hub Nepal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
